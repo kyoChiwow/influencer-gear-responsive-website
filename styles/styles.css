@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Universal Styles */
+*{
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* Font Family */
 .font-poppins{
   font-family: "Poppins", sans-serif;
@@ -30,36 +37,33 @@
   margin-top: 90px;
   align-items: center;
 }
-
-.nav-bar-left{
+.nav-bar-title{
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--primary-color);
 }
-
-.nav-bar-right{
-  color: var(--primary-color);
-  gap: 34px;
+.nav-bar-elements > ul{
+  gap: 40px;
 }
-
-.nav-bar-right > a{
+.nav-bar-elements > ul > li > a{
   text-decoration: none;
   color: var(--primary-color);
+  font-weight: 600;
 }
 
-.nav-bar-right > a > li{
+.nav-bar-elements > ul > li{
   list-style: none;
 }
 /* Navbar style ends here */
 
 /* Banner Styles here */
 .banner-container{
-  border: 2px solid tomato;
   max-width: 1500px;
   margin: 0 auto;
   margin-top: 60px;
 }
 
 .banner-text{
-  border: 2px solid yellow;
   max-width: 800px;
 }
 
@@ -96,7 +100,6 @@
 
 
 .banner-img{
-  border: 2px solid red;
   width: 475px;
   height: 480px;
   background-image: url(/images/Circle\ design.svg);
@@ -119,7 +122,7 @@
 .banner-sponsor{
   max-width: 1290px;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 111px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   padding: 36px 61px;
@@ -127,24 +130,79 @@
 }
 
 .line-1{
-position: absolute;
-width: 1290px;
-height: 1px;
-left: 255px;
-right: -165px;
-top: 785px;
-bottom: -616px;
-background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
-}
+  position: absolute;
+  width: 1290px;
+  height: 1px;
+  left: 255px;
+  right: -165px;
+  top: 785px;
+  bottom: -616px;
+  background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+  }
 
 .line-2{
-position: absolute;
-width: 1290px;
-height: 1px;
-left: 255px;
-right: -165px;
-top: 890px;
-bottom: -725px;
-background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
-}
+  position: absolute;
+  width: 1290px;
+  height: 1px;
+  left: 255px;
+  right: -165px;
+  top: 890px;
+  bottom: -725px;
+  background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+  }
+
+  /* Smaller Device Responsive styles */
+
+  @media screen and (max-width: 576px) {
+    .nav-bar{
+      margin-top: 30px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+    }
+
+    .nav-bar-title{
+      margin-left: 5vw;
+    }
+
+    .nav-bar-elements ul {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .banner-text-img-container{
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .banner-img {
+     background-size: 380px;
+    }
+
+    .banner-img img{
+      position: relative;
+      max-height: min-content;
+      max-width: 350px;
+      left: 60px;
+      top: 80px;
+    }
+
+    .banner-text{
+      text-align: center;
+    }
+
+    .banner-sponsor {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 0;
+    }
+    
+    .line-1, .line-2{
+      display: none;
+    }
+  }
 
