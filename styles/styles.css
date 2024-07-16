@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Font Family */
+.font-poppins{
+  font-family: "Poppins", sans-serif;
+}
+
+/* Shared Styles */
+
+:root{
+  --primary-color: rgba(58, 58, 58, 1);
+  --cards-color: rgba(120, 120, 133, 1);
+  --cards-title-color: rgba(24, 25, 31, 1);
+  --btn-anc-color: rgba(224, 44, 109, 1);
+}
+
+.display-flex{
+  display: flex;
+}
+
+
+
+/* Header Style Begins here */
+
+/* Navbar Style here */
+.nav-bar{
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 90px;
+  align-items: center;
+}
+
+.nav-bar-left{
+  color: var(--primary-color);
+}
+
+.nav-bar-right{
+  color: var(--primary-color);
+  gap: 34px;
+}
+
+.nav-bar-right > a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.nav-bar-right > a > li{
+  list-style: none;
+}
+/* Navbar style ends here */
+
+/* Banner Styles here */
+.banner-container{
+  border: 2px solid tomato;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.banner-text{
+  border: 2px solid yellow;
+  max-width: 800px;
+}
+
+.banner-text h1{
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+.banner-text p{
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+}
+
+.booking-btn{
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 41px;
+  border: none;
+  outline: none;
+  background-color: var(--btn-anc-color);
+}
+
+.fa-solid, .fa-arrow-right{
+  position: relative;
+  left: 5px;
+  top: 1px;
+}
+
+
+.banner-img{
+  border: 2px solid red;
+  width: 475px;
+  height: 480px;
+  background-image: url(/images/Circle\ design.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 475px;
+  position: relative;
+}
+
+.banner-img img{
+  position: absolute;
+  top: 35px;
+}
+
+.banner-text-img-container{
+  justify-content: space-between;
+  
+}
+
+.banner-sponsor{
+  max-width: 1290px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 36px 61px;
+  align-items: center;
+}
+
+.line-1{
+position: absolute;
+width: 1290px;
+height: 1px;
+left: 255px;
+right: -165px;
+top: 785px;
+bottom: -616px;
+background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+}
+
+.line-2{
+position: absolute;
+width: 1290px;
+height: 1px;
+left: 255px;
+right: -165px;
+top: 890px;
+bottom: -725px;
+background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+}
+
