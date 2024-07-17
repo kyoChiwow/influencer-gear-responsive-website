@@ -25,184 +25,172 @@
   display: flex;
 }
 
+/* Navbar Styles here */
 
-
-/* Header Style Begins here */
-
-/* Navbar Style here */
-.nav-bar{
-  justify-content: space-between;
-  max-width: 1500px;
-  margin: 0 auto;
+.nav-bar-container{
+  justify-content: space-around;
   margin-top: 90px;
-  align-items: center;
 }
+
 .nav-bar-title{
+  color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--primary-color);
-}
-.nav-bar-elements > ul{
-  gap: 40px;
-}
-.nav-bar-elements > ul > li > a{
-  text-decoration: none;
-  color: var(--primary-color);
-  font-weight: 600;
 }
 
-.nav-bar-elements > ul > li{
-  list-style: none;
-}
-/* Navbar style ends here */
-
-/* Banner Styles here */
-.banner-container{
-  max-width: 1500px;
-  margin: 0 auto;
-  margin-top: 60px;
+.nav-bar-menu{
+  width: 50vw;
 }
 
-.banner-text{
-  max-width: 800px;
-}
-
-.banner-text h1{
-  font-size: 3.25rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  margin-bottom: 16px;
-}
-
-.banner-text p{
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--primary-color);
-  margin-bottom: 25px;
-}
-
-.booking-btn{
-  color: white;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 10px 24px;
-  border-radius: 41px;
-  border: none;
-  outline: none;
-  background-color: var(--btn-anc-color);
-}
-
-.fa-solid, .fa-arrow-right{
-  position: relative;
-  left: 5px;
-  top: 1px;
-}
-
-
-.banner-img{
-  width: 475px;
-  height: 480px;
-  background-image: url(/images/Circle\ design.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 475px;
-  position: relative;
-}
-
-.banner-img img{
-  position: absolute;
-  top: 35px;
-}
-
-.banner-text-img-container{
+.list-item{
   justify-content: space-between;
+  align-items: center;
   
 }
 
+.list-item li{
+  list-style: none;
+}
+
+.list-item a{
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* navbar ends here */
+
+/* Banner section starts here */
+
+.banner-container{
+}
+
+.banner-content-container{
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 3.75rem;
+}
+
+.banner-content{
+  max-width: 40vw;
+  gap: 1.25rem;
+}
+
+.banner-content h1{
+  color: var(--primary-color);
+  font-size: 3.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.banner-content p{
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.book-btn{
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: rgba(224, 44, 109, 1);
+  border-radius: 2.56rem;
+  padding: .625rem 1.5rem;
+}
+
+.banner-image{
+  position: relative;
+  justify-items: center;
+  max-width: auto;
+  max-height: auto;
+  margin-bottom: 1rem;
+}
+
+.banner-image img{
+  max-width: 100%;
+  max-height: 100%;
+  
+}
+
+.circle-img{
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  left: 0rem;
+  z-index: -1;
+}
+
+.banner-sponsor-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+
+
 .banner-sponsor{
-  max-width: 1290px;
-  margin: 0 auto;
-  margin-top: 111px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  padding: 36px 61px;
+  gap: 3.75rem;
+  max-width: 100%;
   align-items: center;
 }
 
-.line-1{
-  position: absolute;
-  width: 1290px;
-  height: 1px;
-  left: 255px;
-  right: -165px;
-  top: 785px;
-  bottom: -616px;
-  background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+/* Smaller device responsive styles here */
+
+@media screen and (max-width: 575px) {
+  .nav-bar-container{
+    margin-top: 30px;
+  }
+  .nav-bar-menu{
+    display: none;
   }
 
-.line-2{
-  position: absolute;
-  width: 1290px;
-  height: 1px;
-  left: 255px;
-  right: -165px;
-  top: 890px;
-  bottom: -725px;
-  background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+  .nav-bar-title{
+    font-size: 1rem;
+    text-align: center;
   }
 
-  /* Smaller Device Responsive styles */
-
-  @media screen and (max-width: 576px) {
-    .nav-bar{
-      margin-top: 30px;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      align-self: center;
-    }
-
-    .nav-bar-title{
-      margin-left: 5vw;
-    }
-
-    .nav-bar-elements ul {
-      margin-top: 20px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .banner-text-img-container{
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .banner-img {
-     background-size: 380px;
-    }
-
-    .banner-img img{
-      position: relative;
-      max-height: min-content;
-      max-width: 350px;
-      left: 60px;
-      top: 80px;
-    }
-
-    .banner-text{
-      text-align: center;
-    }
-
-    .banner-sponsor {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      padding: 0;
-    }
-    
-    .line-1, .line-2{
-      display: none;
-    }
+  .banner-content-container{
+    flex-direction: column-reverse;
   }
 
+  .banner-content{
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .banner-content h1{
+    font-size: 1.75rem;
+  }
+
+  .banner-content p{
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .banner-image{
+    max-width: 100%;
+    position: relative;
+    margin-left: 0.875rem;
+  }
+  .banner-image img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .banner-sponsor{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .banner-sponsor img{
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+  }
+
+}
