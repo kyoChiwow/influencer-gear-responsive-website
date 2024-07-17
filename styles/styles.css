@@ -156,6 +156,69 @@
   background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
 }
 
+/* Popular Collection section styles here */
+.popular-collection-container{
+  max-width: 65.437rem;
+  max-height: auto;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+.popular-title{
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 1.87rem;
+}
+
+.popular-card-box{
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.popular-card{
+  border: none;
+  max-width: 21.875rem;
+  max-height: auto;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card-title{
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: rgba(24, 25, 31, 1);
+}
+
+.card-price{
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.card-delivery, .card-available, .card-warranty{
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: rgba(120, 120, 133, 1);
+}
+
+.popular-anc{
+  margin-top: 3rem;
+  justify-content: right;
+}
+.see-more-anc{
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(224, 44, 109, 0.87);
+  
+}
+
 /* Smaller device responsive styles here */
 
 @media screen and (max-width: 575px) {
@@ -214,6 +277,26 @@
     max-width: 100%;
     max-height: 100%;
     vertical-align: middle;
+  }
+
+  .popular-collection-container{
+    max-width: 95%;
+    justify-content: center;
+  }
+
+  .popular-card-box{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .popular-card{
+    max-width: 100%;
+  }
+
+  .popular-title{
+    font-size: 1rem;
+    font-weight: 600;
   }
 
 }
