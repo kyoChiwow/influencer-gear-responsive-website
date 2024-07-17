@@ -62,9 +62,6 @@
 
 /* Banner section starts here */
 
-.banner-container{
-}
-
 .banner-content-container{
   align-items: center;
   justify-content: space-evenly;
@@ -137,9 +134,35 @@
   align-items: center;
 }
 
+.line-1{
+  width: 1390px;
+  height: 1px;
+  background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+  position: absolute;
+  left: 260px;
+  right: -165px;
+  top: 700px;
+  bottom: -616px;
+}
+
+.line-2{
+  position: absolute;
+  width: 1390px;
+  height: 1px;
+  left: 260px;
+  right: -165px;
+  top: 800px;
+  bottom: -725px;
+  background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+}
+
 /* Smaller device responsive styles here */
 
 @media screen and (max-width: 575px) {
+
+  .line-1, .line-2{
+    display: none;
+  }
   .nav-bar-container{
     margin-top: 30px;
   }
@@ -183,7 +206,7 @@
   .banner-sponsor{
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    max-width: 100%;
+    max-width: 95%;
     justify-content: center;
   }
 
